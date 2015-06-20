@@ -1,0 +1,97 @@
+/*Modal registro*/
+.modal.registro .modal-body div.contenedor-registro {float:none;display: inline-block}
+.modal.registro .modal-body div .seguirConectado { float:right}
+.modal.registro .modal-body div .seguirConectado span { margin-left:5px}
+.modal.registro .modal-body div .texto-registro { margin:15px 0}
+.modal.registro .modal-body div ul { list-style:none; padding:0}
+.modal.registro .modal-body div ul li {padding:0}
+.modal.registro .modal-body div .links-social a {width: 100%;margin-bottom: 2%;padding-top: 0;text-transform: inherit}
+.modal.registro .modal-body div .links-social a:hover {text-decoration:none}
+.modal.registro .modal-body div .links-social a i {margin-right: 10px;position: relative;top: 6px}
+.modal.registro .modal-body div .social-google {background-color: #e74c3c; border-color:#e74c3c}
+.modal.registro .modal-body div .social-google:hover {background-color:#ed7669; border-color:#ed7669}
+@media (max-width:991px) {
+	.modal.registro .modal-body div.contenedor-registro {float: none;display: block}
+	.modal.registro .modal-body div .links-social a, .modal.registro .modal-body div .links-social a:hover {border: 3px solid #fff;border-radius: 5px}
+	.modal.registro .modal-body div #errorLogin { display:inline-block}
+}
+@media (max-width:448px) {
+	.modal.registro .modal-body div.contenedor-registro { font-size:0.8em}
+	.modal.registro .modal-body div a { display: block}
+	.modal.registro .modal-body div .seguirConectado { float: left}
+	.modal.registro .modal-body div { padding-left:0;overflow-y: auto!important;max-height: 350px}
+}
+/* Ajustes Iphone*/
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+	.modal.registro .modal-body div.contenedor-registro { width:95%}
+	.modal.registro .modal-body div .links-social a { font-size:0.8em}
+}
+
+/* Pop up confidencialidad */
+.modal.confidencialPopup { max-height:80%}
+.modal.confidencialPopup .modal-body {overflow-y: auto!important;max-height: 450px}
+@media (max-height:448px) {
+	.modal.confidencialPopup { max-height:100%}
+	.modal.confidencialPopup .modal-body {max-height: 100px}
+}
+@media (max-height:768px) {
+	.modal.confidencialPopup { max-height:100%}
+	.modal.confidencialPopup .modal-body {max-height: 300px}
+}
+
+/* Popup Contactenos*/
+.modal .modal-body .contenedor-contactenos, .modal.contactanos .contenedor-contactenos form {display: inline-block;width: 100%}
+ .modal .modal-body .contenedor-contactenos i { margin-right:5px}
+.modal .modal-body .contenedor-contactenos input[type="text"]{padding: 10px;height: auto}
+.modal .modal-body .contenedor-contactenos textarea {resize: none; overflow-y: auto; height:100px}
+
+@media (max-width:768px) {
+	.modal .modal-body .contenedor-contactenos textarea {height:50px}
+}
+@media (max-height:768px) {
+	.modal.contactanos .contenedor-contactenos form {max-height: 450px}
+	.modal .modal-body .contenedor-contactenos textarea {height:50px}
+}
+
+/* Modal General*/
+.modal.recomendarAmigoPopup .contenedor-recomendarAmigo, .modal.denunciar .contenedor-denunciar, .modal .contenedor-scroll, .modal .contenedor-carta, .modal .contenedor-remuneracion, .modal .contenedor-password, .modal .contenedor 
+{float: none;display: inline-block}
+.modal .contenedor i {margin-right: 10px}
+.modal .text-center {margin-top:15px;margin-bottom: 10px}
+
+@media (max-width: 768px) {
+	.modal .modal-body {max-height: 310px; overflow-y:auto}
+	.modal .modal-body .contenedor, .modal .modal-body .contenedor-password { overflow-y:auto!important;max-height: 280px}
+}
+
+/* General mobile*/
+@media (max-width:448px) {
+	.modal .contenedor-password { overflow-y:auto!important;max-height: 280px}
+}
+
+
+/* Popup Privacidad*/
+.modal.confidencialidad input[type="radio"] {margin-top: 6px;margin-right: 5px}
+.modal.confidencialidad label { font-weight:400}
+
+/* Popup Recomendar a un amigo */
+.modal.recomendarAmigoPopup { margin-bottom:25px}
+
+/* Popup Denunciar aviso*/
+ .modal.denunciar .contenedor-denunciar textarea {resize:vertical}
+ 
+ /* Popup Descargar CV*/
+ .modal.popupDescarga input[type="radio"] {top: 3px;position: relative}
+
+/* Popup enviar mail - ok*/
+.modal.alert-sucess .contenedor i {position: relative; top:5px}
+
+/* Popup Ver mas*/
+.modal .scrollPopUp {max-height: 400px;overflow-y: auto;overflow-x: hidden}
+.modal .scrollPopUp ul { float: left; width:50%}
+@media (max-width:991px) {
+	.modal .scrollPopUp ul { width:100%}
+}
+/* Carta de presentacion */
+.modal .contenedor-carta  select {margin-bottom:25px}
+.modal .contenedor-carta {margin-top:25px}

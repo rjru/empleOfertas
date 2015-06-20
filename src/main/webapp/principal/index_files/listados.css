@@ -1,0 +1,73 @@
+.container.listados h1 { margin-bottom:35px}
+.container.listados ul {list-style:none; padding:0}
+.container.listados ul li { margin-bottom:10px}
+.container.listados ul li h4 { margin-top:15px;display: inline-block}
+
+/* Facetas */
+.container.listados .filtros {padding-left:0}
+.container.listados .filtros h3 {margin-top:0}
+.container.listados .filtros .text-center {margin-top:15px}
+.container.listados .filtros .linkFaceta {cursor:pointer}
+.container.listados .filtros i { margin-right:5px}
+
+/* Suscribirse a alertas*/
+.container.listados .jumbotron {padding:15px}
+.container.listados .jumbotron p {font-size:1em}
+
+/* Avisos */
+.container.listados .contenidoAviso, .container.listados p { text-align:left}
+.container.listados .aviso {margin-bottom: 15px; border-radius:5px; display: inline-block; width:100% }
+.container.listados .aviso h2, .container.listados .aviso .dataEmpresa { margin-top:25px}
+.container.listados .aviso .dataEmpresa {float: right;text-align: right}
+.container.listados .aviso .dataEmpresa p { text-align:right}
+.container.listados .aviso .btn-postularme { margin:15px 0}
+.container.listados .aviso .avisoNuevo {font-weight:700}
+.container.listados .aviso .avisoNuevo:before {content: "/\00a0"; padding: 0 5px;color: #666}
+
+@media (max-width:767px) {
+		.container.listados .avisos { padding:0}
+		.container.listados .aviso h2 {margin-top:0}
+		.container.listados .aviso .dataEmpresa { margin-top:10px} 
+}
+
+/*Agrupados*/
+.container.listados .avisoAgrupado {padding: 0 0 0 10px;border: 2px solid #1e3f7e;margin-bottom: 5px}
+.container.listados .avisoAgrupado img {width:65%}
+.container.listados .avisoAgrupado:hover {border: 3px solid #1e3f7e;box-shadow: 0 5px 15px rgba(51,51,51,0.8)}
+.container.listados .avisoAgrupado .avisoNuevo {text-transform: uppercase}
+
+/*Destacados*/
+.container.listados .avisoDestacado {padding: 15px 0 15px 10px; border: 1px solid #b8b8b8}
+.container.listados .avisoDestacado h2 {font-size:28px}
+.container.listados .avisoDestacado h2, .container.listados .avisoDestacado .dataEmpresa { margin-top:0}
+.container.listados .avisoDestacado img {width:50%}
+.container.listados .avisoDestacado:hover {border: 2px solid #b8b8b8;box-shadow: 0 5px 15px rgba(0,0,0,0.5)}
+
+/* Simple */
+.container.listados .avisoSimple {border-top: 2px solid #b8b8b8;padding:17px 0 0; border-radius:0; margin-bottom:0}
+.container.listados .avisoSimple h2 {font-size:25px}
+.container.listados .avisoSimple h2, .container.listados .avisoSimple .dataEmpresa { margin-top:0}
+
+/* Gratis */
+.container.listados .avisoGratis {border: 1px solid #b8b8b8;padding: 5px 0;margin-bottom: 0}
+.container.listados .avisoGratis h2 {font-size:20px; margin-top:10px}
+.container.listados .avisoGratis .dataEmpresa {margin-top:0}
+.container.listados .avisoGratis .btn-postularme {margin:0}
+@media (max-width:767px) {
+		.container.listados .avisoGratis h2 { margin-top:0}
+		.container.listados .avisoGratis .dataEmpresa p { margin-bottom:0}
+}
+
+/* Ficha empresas */
+.container.fichaEmpresa .infoEmpresa {border: 2px solid #eee; box-shadow: 0 5px 15px rgba(0,0,0,0.5); border-radius:5px;margin-bottom: 25px; padding-bottom:30px}
+.container.fichaEmpresa .infoEmpresa p {padding:0 0 20px}
+.container.fichaEmpresa .btn-postularme {text-align:center}
+.container.fichaEmpresa .avisoGratis .btn-postularme { text-align: right}
+.container.fichaEmpresa .masAvisos {display:none}
+.container.fichaEmpresa .alert .row div, .container.fichaEmpresa .alert .row .btn-alert {text-align:right}
+@media (max-width:767px) {
+	.container.fichaEmpresa .alert .row div, .container.fichaEmpresa .alert .row .btn-alert {text-align:center}
+}
+@media (max-width:447px) {
+	.container.fichaEmpresa .infoEmpresa .btn {font-size:1em}
+}

@@ -1,0 +1,112 @@
+/*colores del sitio */
+.azul {color: #1e3f7e}
+.gris { color:#666}
+.cyan {color:#3498db}
+.verde {color:#128f76}
+.coral, .error {color:#e74c3c}
+.amarillo {color:#f39c12}
+
+/* Textos */
+h1, h2, h3, h4, h5, h6, p, span, a, ul, li {word-wrap: break-word; word-break: break-word}
+h1:first-letter, h2:first-letter, h3:first-letter, h4:first-letter, h5:first-letter, h6:first-letter {text-transform: uppercase}
+
+/*Forms*/
+textarea { resize: none}
+
+/*Links*/
+a:focus {text-decoration:none}
+
+/*Contenedor con header*/
+.container.ayuda, .container.ficha, .container.buscadorAvanzado, .container.buscadorEmpresas, .container.buscadorCodigo, .container.listados, .container.registracion, .container.loguearsePlaca, .container.olvidoContrasenia, .container.recuperarContrasenia, .container.miCuenta  {margin-top:120px!important;margin-bottom: 25px}
+
+/* Header mobile */
+@media (max-width:991px) {
+	ul.navbar-right.specific-mobile li {color:#fff}
+	ul.navbar-right.specific-mobile li a {text-transform: initial; padding-left: 0!important}
+	ul.navbar-right.specific-mobile li a i {margin-right: 5px}
+	ul.navbar-right.specific-mobile li.dropdown { text-transform:uppercase; border:0;padding-top: 5px!important}
+	ul.navbar-right.specific-mobile li {border-top: 1px solid #fff;padding:12px!important; font-size:13px}
+	ul.navbar-right.specific-mobile li a:hover, ul.navbar-right.specific-mobile li:hover a:hover {color:#128f76!important}
+}
+
+
+/* BUSCADOR FIXED*/
+.box-buscador.scroll-fix { position:fixed!important; top:60px; left:0;margin: 0!important; height:57px;border-radius:0!important; background:#b8b8b8!important; width:100%;padding: 5px 0!important; z-index:500}
+.box-buscador.scroll-fix #fixedSearchBox { display:block!important;padding: 0 12px}
+.box-buscador.scroll-fix #fixedSearchBox input { height:auto}
+.box-buscador.scroll-fix #fixedSearchBox .links { margin-top:0;padding: 9px;float: right;background-color: #128f76;border: 0; width:100%;border-radius: 0 5px 5px 0}
+.box-buscador.scroll-fix #fixedSearchBox .links:hover {background: #1dd1ad;border-color: #1dd1ad}
+.box-buscador.scroll-fix #fixedSearchBox .form-group { padding:0}
+.box-buscador.scroll-fix #fixedSearchBox .form-control { padding: 10px 15px; border-top:2px solid #9D9D9D; border-left:2px solid #9D9D9D; border-right:0;border-bottom:0}
+.box-buscador.scroll-fix #fixedSearchBox input[type="text"] {border-radius: 5px 0 0 5px}
+.box-buscador.scroll-fix #fixedSearchBox button:focus {outline:0}
+.box-buscador.scroll-fix #buscadorPrincipal { display:none}
+@media (max-width:991px) {
+		.container.home .buscador .box-buscador.scroll-fix { width:100%!important}
+}
+@media (max-width:447px) {
+	.container.home .buscador .box-buscador.scroll-fix { width:100%!important}
+	.container.home .buscador .box-buscador.scroll-fix .links i {display:none}
+}
+
+/* footer */
+footer ul {padding:0; list-style:none}
+footer a, footer li { color: #FFF; font-weight: 300}
+footer a:hover { text-decoration:none}
+footer ul h5 { font-size:1.4em; margin-top: 35px}
+footer .social { margin-top: 35px}
+footer .postulantes, footer .ayuda, footer .empresas {margin-bottom: 5%}
+footer .social ul a:hover i { color:#f39c12}
+footer .social ul li { float:left; list-style:none; margin-right:5%}
+footer .social ul li:last-child { margin-right:0}
+footer ul.legales { line-height:1.4; margin:0}
+footer ul.legales a {color:#3498db}
+footer ul.legales a:hover { text-decoration:underline}
+footer .footerLogo { margin-top:65px}
+footer .footerLogo img {float: right}
+@media (max-width:991px) {
+	footer .social li {margin: 0 12% 5%}
+}
+@media (max-width:768px) {
+	footer ul.legales { line-height:1.4}
+}
+
+/* scroll */
+.scroll-top-wrapper { position: fixed;opacity: 0;visibility: hidden;overflow: hidden;text-align: center;z-index: 99999999;background-color: #666;color: #eee;width: 50px;height: 48px;line-height: 48px;right: 25px;bottom: 2px;padding-top: 2px;border-radius: 5px;-webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;-ms-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out}
+.scroll-top-wrapper:hover {background-color: #666; opacity:1!important}
+.scroll-top-wrapper.show {visibility:visible;cursor:pointer; opacity: 0.5}
+.scroll-top-wrapper i.fa {line-height: 43px}
+@media (max-width:1310px) {
+	.scroll-top-wrapper.show {display:none!important}
+}
+
+/* banners */
+.banner950 { width:950px; min-height:0;display: block;margin: 10px auto}
+.banner728 { width:728px; min-height:0;display: block;margin: 0 auto}
+.banner350 { width:350px; min-height:0;display: block;margin: 10px auto}
+.banner300 { width:300px; min-height:0;display: block;margin: 10px auto}
+
+/* Placas de errores */
+.container.error500, .container.erro404 {margin-top:60px} 
+
+/* Breadcrumb Volver*/
+.breadcrumb li#backButton:after {content: "| "; padding: 0 5px;color: #ccc}
+.breadcrumb>li#backButton+li:before {content: ""}
+.breadcrumb>li+li:before {content: "\00bb"}
+
+/* Tablas */
+.table {border:0; border-bottom:1px solid #b8b8b8}
+.table thead tr th:first-child { border-radius:5px 0 0}
+.table thead tr th:last-child { border-radius:0 5px 0 0}
+.table thead th { color:#fff; font-size: 18px; font-weight:300; border:0; background:#666}
+.table-striped>tbody>tr:nth-child(odd) { background:#fff}
+.table-striped>tbody>tr:nth-child(even) { background: #b8b8b8; color: #fff}
+.table-striped>tbody>tr:nth-child(even) a { color:#fff}
+
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
+
+/* loading */
+.modal.loading h3 { margin:0;padding: 25px}
+.modal.loading .text-center {margin-top:0}
